@@ -32,5 +32,9 @@ Currently, the file has a link with the password to my local database. Please ch
    # on macOS and Linux
    source myenv/bin/activate
    ```bash
+3. Install Requirements
+   ```bash
+   pip install -r requirements.txt
+   ```
 ### Run the Program 
 Run the main.py using the PyCharm or VSCode run button or use the python command in the terminal/command prompt
