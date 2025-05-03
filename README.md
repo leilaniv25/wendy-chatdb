@@ -7,6 +7,8 @@ Download the files called '20230120-data-collector-dailyRegister.csv', '20230120
 This chatbot focuses on the user's ID wearable device, and age. It also focuses on the height, weight, number of steps, calories, and amount of sleep. To lessen the amount of data stored in the database, filter out the columns that are not mentioned.
 ### Create SQL Database
 Create a SQL Database using the code in the create-db.sql file. Then using SQL commands or the Import Table Wizard in MyMSQL Workbench, input the database from the csv files into the database.
+### Edit Main.py
+Currently, the file has a link with the password to my local database. Please change the password to your password for your database.
 
 ## Installation Guide
 ### Local LLM set-up
