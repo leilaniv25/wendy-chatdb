@@ -2,7 +2,6 @@
 use wearable_devices_dataset;
 
 -- table for participant.csv
--- don't include timestamp, age (interval), group, manufacturer, smartphone
 CREATE TABLE user_info (
 	user_id varchar(12) primary key,
     wearable varchar(20),
@@ -10,7 +9,6 @@ CREATE TABLE user_info (
 );
 
 -- table for dailyRegister.csv
--- Timestamp,ID,Height,Weight,Steps,Calories
 CREATE TABLE measured_physical_data (
 	timestamp varchar(20) primary key,
     user_id varchar(12),
@@ -24,7 +22,7 @@ CREATE TABLE measured_physical_data (
     foreign key (user_id) references user_info(user_id)
 );
 
--- table for daily stress (includes all)
+-- table for daily stress
 CREATE TABLE measured_stress_data (
 	timestamp varchar(20) primary key,
     user_id varchar(12),
@@ -33,8 +31,6 @@ CREATE TABLE measured_stress_data (
 );
 
 -- table for processed physical data
--- don't include Day, lightsleep, deepsleep, remsleep, awakesleep
-
 CREATE TABLE user_input_data (
 	user_id varchar(12),
     height double,
