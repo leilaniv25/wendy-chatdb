@@ -31,7 +31,7 @@ Currently, the file has a link with the password to my local database. Please ch
    ```bash
    # on macOS and Linux
    source myenv/bin/activate
-   ```bash
+   ```
 3. Install Requirements
    ```bash
    pip install -r requirements.txt
